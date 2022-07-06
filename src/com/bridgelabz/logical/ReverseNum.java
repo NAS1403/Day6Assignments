@@ -6,18 +6,17 @@ public class ReverseNum {
 
         Scanner scr = new Scanner(System.in);
         System.out.println("Enter the number to be reversed");
-        int Num = scr.nextInt();
-        int Rev=0;
+        int num = scr.nextInt();
+        int rev=0;
         int n;
-        System.out.println("Number before reversed is: " + Num);
+        System.out.println("Number before reversed is: " + num);
 
-        while (Num!=0){
-            n = Num%10;
-            Rev = Rev * 10 + n;
-            Num = Num / 10;
+        while (num!=0){
+            n = num%10;
+            rev = rev * 10 + n;
+            num = num / 10;
         }
 
-        System.out.println("Number after reversed is: " + Rev);
-
+        System.out.println("Number after reversed is: " + rev);
     }
 }

@@ -3,13 +3,11 @@ import java.util.Scanner;
 
 public class CouponNumbers {
 
-    static void coupon(int N){
+    static void coupon(int n){
         char[] chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".toCharArray();
         int max = 1000000000;
 
-
-
-        for (int i=0;i<N;i++){
+        for (int i=0;i<n;i++){
             int random = (int) (Math.random() * max );
             StringBuilder sb = new StringBuilder();
             while (random > 0) {
@@ -27,8 +25,8 @@ public class CouponNumbers {
 
         Scanner scr = new Scanner(System.in);
         System.out.println("Enter the number of coupons to be generated:");
-        int N = scr.nextInt();
-        coupon(N);
+        int n = scr.nextInt();
+        coupon(n);
 
     }
 }

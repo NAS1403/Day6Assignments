@@ -9,13 +9,13 @@ public class TempConv {
 
         if (ch =='f'|| ch=='F'){
             System.out.println("Enter the temperature to convert from fahrenheit to Celsius");
-            double f = scr.nextInt();
+            double f = scr.nextDouble();
             double c = (f-32)*5/9;
             System.out.println(f + " degree fahrenheit is " +c+ " degree Celsius" );
         }
         else if (ch =='c'|| ch=='C') {
             System.out.println("Enter the temperature to convert from Celsius to fahrenheit");
-            double c = scr.nextInt();
+            double c = scr.nextDouble();
             double f = (c*9/5)+32;
             System.out.println(c + " degree  Celsius  is " +f+ " degree fahrenheit" );
         }

@@ -25,7 +25,6 @@ public class DayOfWeek {
     }
 
     static void dayOfWeek(){
-
         Scanner scr = new Scanner(System.in);
         System.out.println("Enter month");
         int m = scr.nextInt();
